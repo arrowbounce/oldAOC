@@ -4,5 +4,7 @@ with open("Day2") as f:
         row = line.split('x')
         row = [int(i) for i in row]
         row.sort()
-        total += 3*row[0]*row[1] + 2*row[2]*(row[0]+row[1])
+        total += 2*(row[0]+row[1]) + row[0]*row[1]*row[2]
+        # Below is for area
+        # total += 3*row[0]*row[1] + 2*row[2]*(row[0]+row[1])
 print total
