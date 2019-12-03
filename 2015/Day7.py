@@ -78,4 +78,12 @@ with open("Day7") as f:
 		chart[ncell.name] = ncell
 		if ncell.name == "a":
 			a = ncell
+		if ncell.name == "b":
+			b = ncell
+hold = a.getval()
+print hold
+for point in chart.values():
+	if point.type is not None:
+		point.val = None
+b.val = hold
 print a.getval()
