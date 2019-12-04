@@ -15,6 +15,6 @@ def reccount(string, left):
 	return [output, left-1]
 
 val = "1113222113"
-for _ in range(40):
+for _ in range(50):
 	val = reccount(val, _)[0]
 print len(val)
